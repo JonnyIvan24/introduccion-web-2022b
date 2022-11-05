@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="./formularios.html" method="get">
+        <fieldset>
+            <legend>Formulario</legend>
+            <div>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre...">
+            </div>
+    
+            <div>
+                <label for="edad">Edad:</label><br>
+                <input type="number" name="edad" id="edad">
+            </div>
+            
+            <div>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Indica algo que quieras comentar..."></textarea>
+            </div>
+    
+            <div>
+                <label for="carro">Carro:</label><br>
+                <select name="carro" id="carro">
+                    <option value="">Selecciona un carro...</option>
+                    <option value="chevrolet">Chevrolet</option>
+                    <option value="ford">Ford</option>
+                    <option value="bmw">BMW</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Selecciona una opción</p>
+                <input type="radio" name="genero" id="hombre" value="hombre">
+                <label for="hombre">Hombre</label>
+                <input type="radio" name="genero" id="mujer" value="mujer">
+                <label for="mujer">Mujer</label>
+            </div>
+
+            <div>
+                <p>Selecciona que tipo de vehiculos tienes</p>
+                <input type="checkbox" name="vehiculo" id="carro" value="carro">
+                <label for="carro">Carro</label><br>
+                <input type="checkbox" name="vehiculo" id="bici" value="bici">
+                <label for="bici">Bici</label><br>
+                <input type="checkbox" name="vehiculo" id="bote" value="bote">
+                <label for="bote">bote</label><br>
+            </div>
+    
+            <div>
+                <input type="submit" value="Guardar">
+            </div>
+        </fieldset>
+    </form>
+    <button type="button" onclick="alert('Hola Johnny')">Da clic!</button>
+</body>
+</html>

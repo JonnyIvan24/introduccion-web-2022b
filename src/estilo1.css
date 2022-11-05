@@ -1,0 +1,14 @@
+@import url();
+
+body {
+    background-color: lightblue;
+}
+
+#test {
+    background-color: aqua;
+}
+
+p {
+    background-image: -moz-linear-gradient(top, yellow, red);
+    background-color: yellow !important;
+}
