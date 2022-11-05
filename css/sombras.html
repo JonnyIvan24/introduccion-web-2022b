@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras</title>
+    <style>
+        div {
+            border: 1px solid;
+            padding: 10px;
+            margin-top: 50px;
+        }
+
+        .a {
+            text-shadow: -2px 2px red;
+        }
+
+        .b {
+            text-shadow: 0 0 2px red, 0 0 5px blue;
+        }
+        
+        .c {
+            box-shadow: 5px 10px #888888;
+        }
+
+        .d {
+            box-shadow: 5px 10px 8px 10px #888888;
+        }
+        
+        .e {
+            box-shadow: 5px 5px blue, 10px 10px green, 15px 15px red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="a">Algún texto</h1>
+    <h1 class="b">Algún texto</h1>
+    <div class="c">
+        <p>El color de las sombras por defecto es negro, pero podemos especificar el que queramos</p>
+    </div>
+
+    <div class="d">
+        <p>primer valor: desplazamiento eje x, segundo valor: desplazamiento eje y, tercer valor: difuminado,
+             cuarto valor: tamaño de la sombra
+        </p>
+    </div>
+
+    <div class="e">
+        <p>múltiples sombras</p>
+    </div>
+</body>
+</html>
