@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transisiones</title>
     <style>
+        :root {
+            --my-color: white;
+        }
+
+        h1 {
+            /* herencia por cascada */
+            --my-color: blue;
+            color: var(--my-color);
+        }
+
+        body {
+            background-color: var(--my-color);
+        }
+
         div {
             width: 100px;
             height: 50px;
@@ -15,7 +29,7 @@
             */
             transition-property: width, height;
             transition-duration: 5s;
-            color: white;
+            color: var(--my-color);
             font-weight: bold;
         }
 
@@ -34,6 +48,7 @@
     </style>
 </head>
 <body>
+    <h1>Algún texto</h1>
     <p>Desplace el mouse sobre el cuadro rojo para mirar la animación (transisión)</p>
     <div id="a"></div>
     <br><br>
