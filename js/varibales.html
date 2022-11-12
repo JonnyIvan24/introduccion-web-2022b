@@ -8,6 +8,7 @@
 </head>
 <body>
     <script>
+        // Variables tipo texto (string)
         var textoA = "Comillas dobles";
         var textoB = 'Comillas sencillas'
         var textoC = "comillas 'simples' con comillas dobles"
@@ -24,6 +25,49 @@
         y = "3.5"
         document.write(x + y + " " + typeof(x+y))
         document.write(x * y + " " + typeof(x*y))
+
+        // variables tipo numerico (number)
+        var a, b;
+        a = 10
+        b = 3.7
+        console.log(a+b)
+        console.log(a-b)
+        console.log(a*b)
+        console.log(a/b)
+        console.log(a%b)
+
+        console.log(1+a++)
+        console.log(a++)
+        console.log(a)
+        
+        console.log(1+ ++b)
+        console.log(b)
+
+        // variables booleano (boolean)
+        var j = true, k = false
+        console.log(j, k)
+
+        // tabla de verdad AND
+        console.log("AND")
+        console.log(j && j)
+        console.log(k && k)
+        console.log(j && k)
+        
+        // tabla de verdad OR
+        console.log("OR")
+        console.log(j || j)
+        console.log(j || k)
+        console.log(k || j)
+        console.log(k || k)
+        
+        //  igualdad y negación
+        console.log("Igualdad y negación")
+        console.log(j == k)
+        console.log(j != k)
+        
+        console.log(1 == "1")
+        console.log(1 === "1")
+        console.log(1 !== "1")
     </script>
 </body>
 </html>
