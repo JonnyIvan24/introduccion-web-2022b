@@ -68,6 +68,34 @@
         console.log(1 == "1")
         console.log(1 === "1")
         console.log(1 !== "1")
+
+        // Listas
+        console.log("----- Listas -------")
+        var nombre = "Ana"
+        var miLista = ["Walter", "Barcelona", 22,true, ,nombre]
+        
+        console.log(miLista)
+        console.log(miLista[4])
+        console.log(miLista.length)
+        console.log(miLista[miLista.length-1])
+        
+        // Objetos
+        console.log("----- Objetos -------")
+
+        var miObjeto = {
+            nombre: "Walter",
+            apellido: "White",
+            aficiones: ["Quimica", "html", "Cocina"],
+            edad: 40,
+            inscrito: true,
+        }
+
+        console.log(miObjeto)
+        console.log(miObjeto.nombre)
+        console.log(miObjeto.apellido)
+        console.log(miObjeto.aficiones[1])
+        console.log(miObjeto.inscrito)
+
     </script>
 </body>
 </html>
