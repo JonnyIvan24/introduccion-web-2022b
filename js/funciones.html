@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <script>
+        var num1 = 2, num2 = 3
+        console.log('suma: ' + suma(num1, num2))
+        console.log('suma: ' + suma(10, 5))
+        console.log('resta: ' + resta(num1, num2))
+        console.log('multiplicación: ' + multiplicacion())
+        console.log('división: ' + division(10, 5))
+
+        function suma(a, b) {
+            return a + b
+        }
+
+        function resta(a, b) {
+            return a - b
+        }
+
+        function multiplicacion() {
+            // si no hay parámetros con el mismo nombre que mi variable global
+            // no hay necesidad de utilizar la palabra this
+            return num1 * num2
+        }
+
+        function division(num1, num2) {
+            console.log('this.num1 global: ' + this.num1, 'num1 local: ' + num1)
+            return this.num1/num2
+        }
+    </script>
+</body>
+</html>

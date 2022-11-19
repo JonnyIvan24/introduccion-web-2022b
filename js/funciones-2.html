@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones parte 2</title>
+</head>
+<body>
+    <script>
+        var numeros = [45, 5, 1, 10, 20]
+
+        console.log('---------- función común --------')
+        numeros.forEach(miIterador)
+
+        // común
+        function miIterador(value, index) {
+            console.log('El inidice ' + index + ' tiene como valor '+ value)
+        }
+
+        // ánonima
+        console.log('---------- función ánonima --------')
+        numeros.forEach(function (index, value) {
+            console.log('El inidice ' + index + ' tiene como valor '+ value)
+        })
+
+        // flecha
+        console.log('---------- función de flecha --------')
+        numeros.forEach((index, value) => {
+            console.log('El inidice ' + index + ' tiene como valor '+ value)
+        })
+    </script>
+</body>
+</html>
