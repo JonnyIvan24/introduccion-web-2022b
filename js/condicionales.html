@@ -18,6 +18,21 @@
             console.log("Tienes menos de 20 años")
         }
 
+        var texto
+
+        switch (new Date().getDay()) {
+            case 6:
+                texto = 'Hoy es sábado'
+                break
+            case 0:
+                texto = 'Hoy es domingo'
+                break
+            default:
+                texto = 'Hoy es un día entre semana'
+        }
+
+        document.write(texto)
+
     </script>
 </body>
 </html>
