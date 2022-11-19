@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles</title>
+</head>
+<body>
+    <script>
+        console.log('------- for --------')
+        for (let paso = 0; paso < 6; paso++) {
+            console.log('Paso: ' + paso)            
+        }
+
+        console.log('-------- while --------')
+        var x = 0, n = 0
+        while (n < 3) {
+            n++
+            x += n
+            console.log(x, n)
+        }
+
+        console.log('-------- do-while --------')
+        i = 0
+        do {
+            i++
+            console.log(i)
+        } while (i < 5);
+
+        var numeros = [45, 5, 1, 10, 20]
+        numeros.forEach(function (value, index, array) {
+            document.write('El inidice ' + index + ' tiene como valor '+ value + '<br>')
+            document.write(array)
+            document.write('<br>')
+        })
+    </script>
+</body>
+</html>
