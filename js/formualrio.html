@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validaciones de un formulario</title>
+
+</head>
+<body>
+    <form action="#" method="get">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name">
+        <small style="color: red;" id="name-error"></small>
+        <button onclick="validar(event)">Guardar</button>
+    </form>
+
+    <script>
+        function validar (event) {
+            event.preventDefault()
+            const nombre = document.getElementById('name')
+            const nombreError = document.getElementById('name-error')
+
+            if (nombre.value.split(' ').length < 2) {
+                nombreError.innerText = "Dato invalido"
+            } else {
+                nombreError.innerText = ""
+            }
+
+
+        }
+
+
+    </script>
+</body>
+</html>
